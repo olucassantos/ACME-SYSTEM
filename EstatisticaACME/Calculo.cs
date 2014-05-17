@@ -160,9 +160,26 @@ namespace EstatisticaACME
             }
             #endregion
 
-            public float Fi//Quantidade de vezes que aparece um elemento
+            public int Fi(int i)//Quantidade de vezes que aparece um elemento
             {
-
+                switch (i)
+                {
+                    case 1:
+                        return Array.FindAll(amostra, x => x >= klass1[0] && x <= klass1[1]).Length;
+                    case 2:
+                        return Array.FindAll(amostra, x => x >= klass2[0] && x <= klass2[1]).Length;
+                    case 3:
+                        return Array.FindAll(amostra, x => x >= klass3[0] && x <= klass3[1]).Length;
+                    case 4:
+                        return Array.FindAll(amostra, x => x >= klass4[0] && x <= klass4[1]).Length;
+                    case 5:
+                        return Array.FindAll(amostra, x => x >= klass5[0] && x <= klass5[1]).Length;
+                    case 6:
+                        return Array.FindAll(amostra, x => x >= klass6[0] && x <= klass6[1]).Length;
+                    default:
+                        break;
+                }
+                return 0;
             }
     }
 }

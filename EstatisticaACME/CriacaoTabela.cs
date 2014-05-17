@@ -16,6 +16,8 @@ namespace EstatisticaACME
         public CriacaoTabela(float[] amostrai)
         {
             InitializeComponent();
+            Calculo calcula = new Calculo(amostrai);
+            lblTeste.Text = calcula.Fi(1).ToString();
             amostra = amostrai;
         }
 
@@ -27,11 +29,6 @@ namespace EstatisticaACME
         private void CriacaoTabela_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
-        }
-
-        private void col1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            oque(col1);
         }
 
         private void oque(ComboBox comboi)
@@ -46,8 +43,8 @@ namespace EstatisticaACME
                 case 1:
 
                     break;
-                case 2:
-
+                case 2://Fi
+                    fis(colunas);
                     break;
                 case 3:
 
@@ -193,6 +190,20 @@ namespace EstatisticaACME
             {
                 col[i].Text = klas[i];
             }
+        }
+
+        private void fis(Label[] col)
+        {
+            Calculo calculo = new Calculo(amostra);
+            for (int i = 0; i < calculo.H; i++)
+            {
+                col[i].Text = calculo.Fi(i).ToString() ;
+            }
+        }
+
+        private void col1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            oque(col1);
         }
 
         private void col2_SelectedIndexChanged(object sender, EventArgs e)
