@@ -40,8 +40,8 @@ namespace EstatisticaACME
                 case 0://Classes
                     classes(colunas);
                     break;
-                case 1:
-
+                case 1://FAC
+                    facs(colunas);
                     break;
                 case 2://Fi
                     fis(colunas);
@@ -198,6 +198,15 @@ namespace EstatisticaACME
             for (int i = 0; i < calculo.H; i++)
             {
                 col[i].Text = calculo.Fi(i).ToString() ;
+            }
+        }
+
+        private void facs(Label[] col)
+        {
+            Calculo calculo = new Calculo(amostra);
+            for (int i = 0; i < calculo.H; i++)
+            {
+                col[i].Text = calculo.FAC(i).ToString();
             }
         }
 

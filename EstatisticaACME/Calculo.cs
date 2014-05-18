@@ -160,7 +160,7 @@ namespace EstatisticaACME
             }
             #endregion
 
-            public int Fi(int i)//Quantidade de vezes que aparece um elemento
+            public int Fi(int i)//Quantidade de vezes que aparecem elementos em determinadas classes
             {
                 switch (i)
                 {
@@ -176,6 +176,44 @@ namespace EstatisticaACME
                         return Array.FindAll(amostra, x => x >= klass5[0] && x <= klass5[1]).Length;
                     case 6:
                         return Array.FindAll(amostra, x => x >= klass6[0] && x <= klass6[1]).Length;
+                    case 7:
+                        return Array.FindAll(amostra, x => x >= klass7[0] && x <= klass7[1]).Length;
+                    case 8:
+                        return Array.FindAll(amostra, x => x >= klass8[0] && x <= klass8[1]).Length;
+                    case 9:
+                        return Array.FindAll(amostra, x => x >= klass9[0] && x <= klass9[1]).Length;
+                    case 10:
+                        return Array.FindAll(amostra, x => x >= klass10[0] && x <= klass10[1]).Length;
+                    default:
+                        break;
+                }
+                return 0;
+            }
+
+            public int FAC(int i)//Frequencia acumulada
+            {
+                switch (i)
+                {
+                    case 1:
+                        return 0;
+                    case 2:
+                        return Fi(1);
+                    case 3:
+                        return FAC(2) + Fi(2);
+                    case 4:
+                        return FAC(3) + Fi(3);
+                    case 5:
+                        return FAC(4) + Fi(4);
+                    case 6:
+                        return FAC(5) + Fi(5);
+                    case 7:
+                        return FAC(6) + Fi(6);
+                    case 8:
+                        return FAC(7) + Fi(7);
+                    case 9:
+                        return FAC(8) + Fi(8);
+                    case 10:
+                        return FAC(9) + Fi(9);
                     default:
                         break;
                 }
