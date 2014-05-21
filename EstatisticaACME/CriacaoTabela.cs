@@ -26,11 +26,6 @@ namespace EstatisticaACME
             InitializeComponent();
         }
 
-        private void CriacaoTabela_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void oque(ComboBox comboi)
         {
             combo = comboi;
@@ -46,14 +41,14 @@ namespace EstatisticaACME
                 case 2://Fi
                     fis(colunas);
                     break;
-                case 3:
-
+                case 3://Xi
+                    xis(colunas);
                     break;
-                case 4:
-
+                case 4://XixFi
+                    xifis(colunas);
                     break;
-                case 5:
-
+                case 5://Variancia
+                    variancia(colunas);
                     break;
                 default:
                     break;
@@ -197,7 +192,7 @@ namespace EstatisticaACME
             Calculo calculo = new Calculo(amostra);
             for (int i = 0; i < calculo.H; i++)
             {
-                col[i].Text = calculo.Fi(i).ToString() ;
+                col[i].Text = calculo.Fi(i + 1).ToString();
             }
         }
 
@@ -206,7 +201,34 @@ namespace EstatisticaACME
             Calculo calculo = new Calculo(amostra);
             for (int i = 0; i < calculo.H; i++)
             {
-                col[i].Text = calculo.FAC(i).ToString();
+                col[i].Text = calculo.FAC(i + 1).ToString();
+            }
+        }
+
+        private void xis(Label[] col)
+        {
+            Calculo calculo = new Calculo(amostra);
+            for (int i = 0; i < calculo.H; i++)
+            {
+                col[i].Text = calculo.xis(i + 1).ToString();
+            }
+        }
+
+        private void xifis(Label[] col)
+        {
+            Calculo calculo = new Calculo(amostra);
+            for (int i = 0; i < calculo.H; i++)
+            {
+                col[i].Text = calculo.xifi(i + 1).ToString();
+            }
+        }
+
+        private void variancia(Label[] col)
+        {
+            Calculo calculo = new Calculo(amostra);
+            for (int i = 0; i < calculo.H; i++)
+            {
+                col[i].Text = calculo.variancias(i + 1).ToString();
             }
         }
 
@@ -238,6 +260,23 @@ namespace EstatisticaACME
         private void col6_SelectedIndexChanged(object sender, EventArgs e)
         {
             oque(col6);
+        }
+
+        private void next_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ResultadosGraficos res = new ResultadosGraficos(amostra);
+            res.Show();
+        }
+
+        private void prev_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void CriacaoTabela_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

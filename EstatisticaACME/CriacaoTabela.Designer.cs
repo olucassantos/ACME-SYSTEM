@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.imgLogo = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -98,27 +97,26 @@
             this.col1lin3 = new System.Windows.Forms.Label();
             this.col1lin2 = new System.Windows.Forms.Label();
             this.col1lin1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.lblTeste = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
+            this.next = new System.Windows.Forms.Button();
+            this.prev = new System.Windows.Forms.Button();
+            this.imgLogo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // imgLogo
-            // 
-            this.imgLogo.Image = global::EstatisticaACME.Properties.Resources.AcmeSystems;
-            this.imgLogo.Location = new System.Drawing.Point(247, 0);
-            this.imgLogo.Name = "imgLogo";
-            this.imgLogo.Size = new System.Drawing.Size(390, 143);
-            this.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgLogo.TabIndex = 2;
-            this.imgLogo.TabStop = false;
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Trebuchet MS", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(310, 161);
+            this.lblTitle.Location = new System.Drawing.Point(310, 152);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(266, 37);
             this.lblTitle.TabIndex = 6;
@@ -127,7 +125,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(4, 217);
+            this.panel1.Location = new System.Drawing.Point(4, 181);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(877, 441);
             this.panel1.TabIndex = 7;
@@ -201,6 +199,12 @@
             this.panel2.Controls.Add(this.col1lin3);
             this.panel2.Controls.Add(this.col1lin2);
             this.panel2.Controls.Add(this.col1lin1);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.panel8);
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(42, 7);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(793, 426);
@@ -217,7 +221,7 @@
             "Fi",
             "Xi",
             "Xi.Fi",
-            "(Xi - Media)² * Fi"});
+            "Variancia"});
             this.col1.Location = new System.Drawing.Point(17, 7);
             this.col1.Name = "col1";
             this.col1.Size = new System.Drawing.Size(121, 30);
@@ -235,7 +239,7 @@
             "Fi",
             "Xi",
             "Xi.Fi",
-            "(Xi - Media)² * Fi"});
+            "Variancia"});
             this.col6.Location = new System.Drawing.Point(652, 7);
             this.col6.Name = "col6";
             this.col6.Size = new System.Drawing.Size(121, 30);
@@ -271,7 +275,7 @@
             "Fi",
             "Xi",
             "Xi.Fi",
-            "(Xi - Media)² * Fi"});
+            "Variancia"});
             this.col4.Location = new System.Drawing.Point(398, 7);
             this.col4.Name = "col4";
             this.col4.Size = new System.Drawing.Size(121, 30);
@@ -289,7 +293,7 @@
             "Fi",
             "Xi",
             "Xi.Fi",
-            "(Xi - Media)² * Fi"});
+            "Variancia"});
             this.col3.Location = new System.Drawing.Point(271, 7);
             this.col3.Name = "col3";
             this.col3.Size = new System.Drawing.Size(121, 30);
@@ -307,7 +311,7 @@
             "Fi",
             "Xi",
             "Xi.Fi",
-            "(Xi - Media)² * Fi"});
+            "Variancia"});
             this.col2.Location = new System.Drawing.Point(144, 7);
             this.col2.Name = "col2";
             this.col2.Size = new System.Drawing.Size(121, 30);
@@ -318,7 +322,7 @@
             // 
             this.col6lin10.AutoSize = true;
             this.col6lin10.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col6lin10.Location = new System.Drawing.Point(648, 378);
+            this.col6lin10.Location = new System.Drawing.Point(656, 377);
             this.col6lin10.Name = "col6lin10";
             this.col6lin10.Size = new System.Drawing.Size(31, 24);
             this.col6lin10.TabIndex = 59;
@@ -328,7 +332,7 @@
             // 
             this.col6lin9.AutoSize = true;
             this.col6lin9.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col6lin9.Location = new System.Drawing.Point(648, 341);
+            this.col6lin9.Location = new System.Drawing.Point(656, 341);
             this.col6lin9.Name = "col6lin9";
             this.col6lin9.Size = new System.Drawing.Size(31, 24);
             this.col6lin9.TabIndex = 58;
@@ -338,7 +342,7 @@
             // 
             this.col6lin8.AutoSize = true;
             this.col6lin8.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col6lin8.Location = new System.Drawing.Point(648, 304);
+            this.col6lin8.Location = new System.Drawing.Point(656, 304);
             this.col6lin8.Name = "col6lin8";
             this.col6lin8.Size = new System.Drawing.Size(31, 24);
             this.col6lin8.TabIndex = 57;
@@ -348,7 +352,7 @@
             // 
             this.col6lin7.AutoSize = true;
             this.col6lin7.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col6lin7.Location = new System.Drawing.Point(648, 267);
+            this.col6lin7.Location = new System.Drawing.Point(656, 267);
             this.col6lin7.Name = "col6lin7";
             this.col6lin7.Size = new System.Drawing.Size(31, 24);
             this.col6lin7.TabIndex = 56;
@@ -358,7 +362,7 @@
             // 
             this.col6lin6.AutoSize = true;
             this.col6lin6.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col6lin6.Location = new System.Drawing.Point(648, 230);
+            this.col6lin6.Location = new System.Drawing.Point(656, 230);
             this.col6lin6.Name = "col6lin6";
             this.col6lin6.Size = new System.Drawing.Size(31, 24);
             this.col6lin6.TabIndex = 55;
@@ -368,7 +372,7 @@
             // 
             this.col6lin5.AutoSize = true;
             this.col6lin5.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col6lin5.Location = new System.Drawing.Point(648, 193);
+            this.col6lin5.Location = new System.Drawing.Point(656, 193);
             this.col6lin5.Name = "col6lin5";
             this.col6lin5.Size = new System.Drawing.Size(31, 24);
             this.col6lin5.TabIndex = 54;
@@ -378,7 +382,7 @@
             // 
             this.col6lin4.AutoSize = true;
             this.col6lin4.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col6lin4.Location = new System.Drawing.Point(648, 156);
+            this.col6lin4.Location = new System.Drawing.Point(656, 156);
             this.col6lin4.Name = "col6lin4";
             this.col6lin4.Size = new System.Drawing.Size(31, 24);
             this.col6lin4.TabIndex = 53;
@@ -388,7 +392,7 @@
             // 
             this.col6lin3.AutoSize = true;
             this.col6lin3.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col6lin3.Location = new System.Drawing.Point(648, 119);
+            this.col6lin3.Location = new System.Drawing.Point(656, 119);
             this.col6lin3.Name = "col6lin3";
             this.col6lin3.Size = new System.Drawing.Size(31, 24);
             this.col6lin3.TabIndex = 52;
@@ -398,7 +402,7 @@
             // 
             this.col6lin2.AutoSize = true;
             this.col6lin2.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col6lin2.Location = new System.Drawing.Point(648, 82);
+            this.col6lin2.Location = new System.Drawing.Point(656, 82);
             this.col6lin2.Name = "col6lin2";
             this.col6lin2.Size = new System.Drawing.Size(31, 24);
             this.col6lin2.TabIndex = 51;
@@ -408,7 +412,7 @@
             // 
             this.col6lin1.AutoSize = true;
             this.col6lin1.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col6lin1.Location = new System.Drawing.Point(648, 45);
+            this.col6lin1.Location = new System.Drawing.Point(656, 45);
             this.col6lin1.Name = "col6lin1";
             this.col6lin1.Size = new System.Drawing.Size(31, 24);
             this.col6lin1.TabIndex = 50;
@@ -418,7 +422,7 @@
             // 
             this.col5lin10.AutoSize = true;
             this.col5lin10.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col5lin10.Location = new System.Drawing.Point(521, 378);
+            this.col5lin10.Location = new System.Drawing.Point(529, 377);
             this.col5lin10.Name = "col5lin10";
             this.col5lin10.Size = new System.Drawing.Size(31, 24);
             this.col5lin10.TabIndex = 49;
@@ -428,7 +432,7 @@
             // 
             this.col5lin9.AutoSize = true;
             this.col5lin9.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col5lin9.Location = new System.Drawing.Point(521, 341);
+            this.col5lin9.Location = new System.Drawing.Point(529, 341);
             this.col5lin9.Name = "col5lin9";
             this.col5lin9.Size = new System.Drawing.Size(31, 24);
             this.col5lin9.TabIndex = 48;
@@ -438,7 +442,7 @@
             // 
             this.col5lin8.AutoSize = true;
             this.col5lin8.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col5lin8.Location = new System.Drawing.Point(521, 304);
+            this.col5lin8.Location = new System.Drawing.Point(529, 304);
             this.col5lin8.Name = "col5lin8";
             this.col5lin8.Size = new System.Drawing.Size(31, 24);
             this.col5lin8.TabIndex = 47;
@@ -448,7 +452,7 @@
             // 
             this.col5lin7.AutoSize = true;
             this.col5lin7.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col5lin7.Location = new System.Drawing.Point(521, 267);
+            this.col5lin7.Location = new System.Drawing.Point(529, 267);
             this.col5lin7.Name = "col5lin7";
             this.col5lin7.Size = new System.Drawing.Size(31, 24);
             this.col5lin7.TabIndex = 46;
@@ -458,7 +462,7 @@
             // 
             this.col5lin6.AutoSize = true;
             this.col5lin6.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col5lin6.Location = new System.Drawing.Point(521, 230);
+            this.col5lin6.Location = new System.Drawing.Point(529, 230);
             this.col5lin6.Name = "col5lin6";
             this.col5lin6.Size = new System.Drawing.Size(31, 24);
             this.col5lin6.TabIndex = 45;
@@ -468,7 +472,7 @@
             // 
             this.col5lin5.AutoSize = true;
             this.col5lin5.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col5lin5.Location = new System.Drawing.Point(521, 193);
+            this.col5lin5.Location = new System.Drawing.Point(529, 193);
             this.col5lin5.Name = "col5lin5";
             this.col5lin5.Size = new System.Drawing.Size(31, 24);
             this.col5lin5.TabIndex = 44;
@@ -478,7 +482,7 @@
             // 
             this.col5lin4.AutoSize = true;
             this.col5lin4.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col5lin4.Location = new System.Drawing.Point(521, 156);
+            this.col5lin4.Location = new System.Drawing.Point(529, 156);
             this.col5lin4.Name = "col5lin4";
             this.col5lin4.Size = new System.Drawing.Size(31, 24);
             this.col5lin4.TabIndex = 43;
@@ -488,7 +492,7 @@
             // 
             this.col5lin3.AutoSize = true;
             this.col5lin3.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col5lin3.Location = new System.Drawing.Point(521, 119);
+            this.col5lin3.Location = new System.Drawing.Point(529, 119);
             this.col5lin3.Name = "col5lin3";
             this.col5lin3.Size = new System.Drawing.Size(31, 24);
             this.col5lin3.TabIndex = 42;
@@ -498,7 +502,7 @@
             // 
             this.col5lin2.AutoSize = true;
             this.col5lin2.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col5lin2.Location = new System.Drawing.Point(521, 82);
+            this.col5lin2.Location = new System.Drawing.Point(529, 82);
             this.col5lin2.Name = "col5lin2";
             this.col5lin2.Size = new System.Drawing.Size(31, 24);
             this.col5lin2.TabIndex = 41;
@@ -508,7 +512,7 @@
             // 
             this.col5lin1.AutoSize = true;
             this.col5lin1.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col5lin1.Location = new System.Drawing.Point(521, 45);
+            this.col5lin1.Location = new System.Drawing.Point(529, 45);
             this.col5lin1.Name = "col5lin1";
             this.col5lin1.Size = new System.Drawing.Size(31, 24);
             this.col5lin1.TabIndex = 40;
@@ -518,7 +522,7 @@
             // 
             this.col4lin10.AutoSize = true;
             this.col4lin10.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col4lin10.Location = new System.Drawing.Point(394, 378);
+            this.col4lin10.Location = new System.Drawing.Point(402, 377);
             this.col4lin10.Name = "col4lin10";
             this.col4lin10.Size = new System.Drawing.Size(31, 24);
             this.col4lin10.TabIndex = 39;
@@ -528,7 +532,7 @@
             // 
             this.col4lin9.AutoSize = true;
             this.col4lin9.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col4lin9.Location = new System.Drawing.Point(394, 341);
+            this.col4lin9.Location = new System.Drawing.Point(402, 341);
             this.col4lin9.Name = "col4lin9";
             this.col4lin9.Size = new System.Drawing.Size(31, 24);
             this.col4lin9.TabIndex = 38;
@@ -538,7 +542,7 @@
             // 
             this.col4lin8.AutoSize = true;
             this.col4lin8.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col4lin8.Location = new System.Drawing.Point(394, 304);
+            this.col4lin8.Location = new System.Drawing.Point(402, 304);
             this.col4lin8.Name = "col4lin8";
             this.col4lin8.Size = new System.Drawing.Size(31, 24);
             this.col4lin8.TabIndex = 37;
@@ -548,7 +552,7 @@
             // 
             this.col4lin7.AutoSize = true;
             this.col4lin7.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col4lin7.Location = new System.Drawing.Point(394, 267);
+            this.col4lin7.Location = new System.Drawing.Point(402, 267);
             this.col4lin7.Name = "col4lin7";
             this.col4lin7.Size = new System.Drawing.Size(31, 24);
             this.col4lin7.TabIndex = 36;
@@ -558,7 +562,7 @@
             // 
             this.col4lin6.AutoSize = true;
             this.col4lin6.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col4lin6.Location = new System.Drawing.Point(394, 230);
+            this.col4lin6.Location = new System.Drawing.Point(402, 230);
             this.col4lin6.Name = "col4lin6";
             this.col4lin6.Size = new System.Drawing.Size(31, 24);
             this.col4lin6.TabIndex = 35;
@@ -568,7 +572,7 @@
             // 
             this.col4lin5.AutoSize = true;
             this.col4lin5.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col4lin5.Location = new System.Drawing.Point(394, 193);
+            this.col4lin5.Location = new System.Drawing.Point(402, 193);
             this.col4lin5.Name = "col4lin5";
             this.col4lin5.Size = new System.Drawing.Size(31, 24);
             this.col4lin5.TabIndex = 34;
@@ -578,7 +582,7 @@
             // 
             this.col4lin4.AutoSize = true;
             this.col4lin4.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col4lin4.Location = new System.Drawing.Point(394, 156);
+            this.col4lin4.Location = new System.Drawing.Point(402, 156);
             this.col4lin4.Name = "col4lin4";
             this.col4lin4.Size = new System.Drawing.Size(31, 24);
             this.col4lin4.TabIndex = 33;
@@ -588,7 +592,7 @@
             // 
             this.col4lin3.AutoSize = true;
             this.col4lin3.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col4lin3.Location = new System.Drawing.Point(394, 119);
+            this.col4lin3.Location = new System.Drawing.Point(402, 119);
             this.col4lin3.Name = "col4lin3";
             this.col4lin3.Size = new System.Drawing.Size(31, 24);
             this.col4lin3.TabIndex = 32;
@@ -598,7 +602,7 @@
             // 
             this.col4lin2.AutoSize = true;
             this.col4lin2.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col4lin2.Location = new System.Drawing.Point(394, 82);
+            this.col4lin2.Location = new System.Drawing.Point(402, 82);
             this.col4lin2.Name = "col4lin2";
             this.col4lin2.Size = new System.Drawing.Size(31, 24);
             this.col4lin2.TabIndex = 31;
@@ -608,7 +612,7 @@
             // 
             this.col4lin1.AutoSize = true;
             this.col4lin1.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col4lin1.Location = new System.Drawing.Point(394, 45);
+            this.col4lin1.Location = new System.Drawing.Point(402, 45);
             this.col4lin1.Name = "col4lin1";
             this.col4lin1.Size = new System.Drawing.Size(31, 24);
             this.col4lin1.TabIndex = 30;
@@ -618,7 +622,7 @@
             // 
             this.col3lin10.AutoSize = true;
             this.col3lin10.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col3lin10.Location = new System.Drawing.Point(267, 378);
+            this.col3lin10.Location = new System.Drawing.Point(275, 377);
             this.col3lin10.Name = "col3lin10";
             this.col3lin10.Size = new System.Drawing.Size(31, 24);
             this.col3lin10.TabIndex = 29;
@@ -628,7 +632,7 @@
             // 
             this.col3lin9.AutoSize = true;
             this.col3lin9.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col3lin9.Location = new System.Drawing.Point(267, 341);
+            this.col3lin9.Location = new System.Drawing.Point(275, 341);
             this.col3lin9.Name = "col3lin9";
             this.col3lin9.Size = new System.Drawing.Size(31, 24);
             this.col3lin9.TabIndex = 28;
@@ -638,7 +642,7 @@
             // 
             this.col3lin8.AutoSize = true;
             this.col3lin8.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col3lin8.Location = new System.Drawing.Point(267, 304);
+            this.col3lin8.Location = new System.Drawing.Point(275, 304);
             this.col3lin8.Name = "col3lin8";
             this.col3lin8.Size = new System.Drawing.Size(31, 24);
             this.col3lin8.TabIndex = 27;
@@ -648,7 +652,7 @@
             // 
             this.col3lin7.AutoSize = true;
             this.col3lin7.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col3lin7.Location = new System.Drawing.Point(267, 267);
+            this.col3lin7.Location = new System.Drawing.Point(275, 267);
             this.col3lin7.Name = "col3lin7";
             this.col3lin7.Size = new System.Drawing.Size(31, 24);
             this.col3lin7.TabIndex = 26;
@@ -658,7 +662,7 @@
             // 
             this.col3lin6.AutoSize = true;
             this.col3lin6.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col3lin6.Location = new System.Drawing.Point(267, 230);
+            this.col3lin6.Location = new System.Drawing.Point(275, 230);
             this.col3lin6.Name = "col3lin6";
             this.col3lin6.Size = new System.Drawing.Size(31, 24);
             this.col3lin6.TabIndex = 25;
@@ -668,7 +672,7 @@
             // 
             this.col3lin5.AutoSize = true;
             this.col3lin5.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col3lin5.Location = new System.Drawing.Point(267, 193);
+            this.col3lin5.Location = new System.Drawing.Point(275, 193);
             this.col3lin5.Name = "col3lin5";
             this.col3lin5.Size = new System.Drawing.Size(31, 24);
             this.col3lin5.TabIndex = 24;
@@ -678,7 +682,7 @@
             // 
             this.col3lin4.AutoSize = true;
             this.col3lin4.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col3lin4.Location = new System.Drawing.Point(267, 156);
+            this.col3lin4.Location = new System.Drawing.Point(275, 156);
             this.col3lin4.Name = "col3lin4";
             this.col3lin4.Size = new System.Drawing.Size(31, 24);
             this.col3lin4.TabIndex = 23;
@@ -688,7 +692,7 @@
             // 
             this.col3lin3.AutoSize = true;
             this.col3lin3.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col3lin3.Location = new System.Drawing.Point(267, 119);
+            this.col3lin3.Location = new System.Drawing.Point(275, 119);
             this.col3lin3.Name = "col3lin3";
             this.col3lin3.Size = new System.Drawing.Size(31, 24);
             this.col3lin3.TabIndex = 22;
@@ -698,7 +702,7 @@
             // 
             this.col3lin2.AutoSize = true;
             this.col3lin2.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col3lin2.Location = new System.Drawing.Point(267, 82);
+            this.col3lin2.Location = new System.Drawing.Point(275, 82);
             this.col3lin2.Name = "col3lin2";
             this.col3lin2.Size = new System.Drawing.Size(31, 24);
             this.col3lin2.TabIndex = 21;
@@ -708,7 +712,7 @@
             // 
             this.col3lin1.AutoSize = true;
             this.col3lin1.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col3lin1.Location = new System.Drawing.Point(267, 45);
+            this.col3lin1.Location = new System.Drawing.Point(275, 45);
             this.col3lin1.Name = "col3lin1";
             this.col3lin1.Size = new System.Drawing.Size(31, 24);
             this.col3lin1.TabIndex = 20;
@@ -718,7 +722,7 @@
             // 
             this.col2lin10.AutoSize = true;
             this.col2lin10.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col2lin10.Location = new System.Drawing.Point(140, 378);
+            this.col2lin10.Location = new System.Drawing.Point(148, 377);
             this.col2lin10.Name = "col2lin10";
             this.col2lin10.Size = new System.Drawing.Size(31, 24);
             this.col2lin10.TabIndex = 19;
@@ -728,7 +732,7 @@
             // 
             this.col2lin9.AutoSize = true;
             this.col2lin9.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col2lin9.Location = new System.Drawing.Point(140, 341);
+            this.col2lin9.Location = new System.Drawing.Point(148, 341);
             this.col2lin9.Name = "col2lin9";
             this.col2lin9.Size = new System.Drawing.Size(31, 24);
             this.col2lin9.TabIndex = 18;
@@ -738,7 +742,7 @@
             // 
             this.col2lin8.AutoSize = true;
             this.col2lin8.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col2lin8.Location = new System.Drawing.Point(140, 304);
+            this.col2lin8.Location = new System.Drawing.Point(148, 304);
             this.col2lin8.Name = "col2lin8";
             this.col2lin8.Size = new System.Drawing.Size(31, 24);
             this.col2lin8.TabIndex = 17;
@@ -748,7 +752,7 @@
             // 
             this.col2lin7.AutoSize = true;
             this.col2lin7.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col2lin7.Location = new System.Drawing.Point(140, 267);
+            this.col2lin7.Location = new System.Drawing.Point(148, 267);
             this.col2lin7.Name = "col2lin7";
             this.col2lin7.Size = new System.Drawing.Size(31, 24);
             this.col2lin7.TabIndex = 16;
@@ -758,7 +762,7 @@
             // 
             this.col2lin6.AutoSize = true;
             this.col2lin6.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col2lin6.Location = new System.Drawing.Point(140, 230);
+            this.col2lin6.Location = new System.Drawing.Point(148, 230);
             this.col2lin6.Name = "col2lin6";
             this.col2lin6.Size = new System.Drawing.Size(31, 24);
             this.col2lin6.TabIndex = 15;
@@ -768,7 +772,7 @@
             // 
             this.col2lin5.AutoSize = true;
             this.col2lin5.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col2lin5.Location = new System.Drawing.Point(140, 193);
+            this.col2lin5.Location = new System.Drawing.Point(148, 193);
             this.col2lin5.Name = "col2lin5";
             this.col2lin5.Size = new System.Drawing.Size(31, 24);
             this.col2lin5.TabIndex = 14;
@@ -778,7 +782,7 @@
             // 
             this.col2lin4.AutoSize = true;
             this.col2lin4.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col2lin4.Location = new System.Drawing.Point(140, 156);
+            this.col2lin4.Location = new System.Drawing.Point(148, 156);
             this.col2lin4.Name = "col2lin4";
             this.col2lin4.Size = new System.Drawing.Size(31, 24);
             this.col2lin4.TabIndex = 13;
@@ -788,7 +792,7 @@
             // 
             this.col2lin3.AutoSize = true;
             this.col2lin3.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col2lin3.Location = new System.Drawing.Point(140, 119);
+            this.col2lin3.Location = new System.Drawing.Point(148, 119);
             this.col2lin3.Name = "col2lin3";
             this.col2lin3.Size = new System.Drawing.Size(31, 24);
             this.col2lin3.TabIndex = 12;
@@ -798,7 +802,7 @@
             // 
             this.col2lin2.AutoSize = true;
             this.col2lin2.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col2lin2.Location = new System.Drawing.Point(140, 82);
+            this.col2lin2.Location = new System.Drawing.Point(148, 82);
             this.col2lin2.Name = "col2lin2";
             this.col2lin2.Size = new System.Drawing.Size(31, 24);
             this.col2lin2.TabIndex = 11;
@@ -808,7 +812,7 @@
             // 
             this.col2lin1.AutoSize = true;
             this.col2lin1.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col2lin1.Location = new System.Drawing.Point(140, 45);
+            this.col2lin1.Location = new System.Drawing.Point(148, 45);
             this.col2lin1.Name = "col2lin1";
             this.col2lin1.Size = new System.Drawing.Size(31, 24);
             this.col2lin1.TabIndex = 10;
@@ -818,7 +822,7 @@
             // 
             this.col1lin10.AutoSize = true;
             this.col1lin10.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col1lin10.Location = new System.Drawing.Point(13, 373);
+            this.col1lin10.Location = new System.Drawing.Point(21, 373);
             this.col1lin10.Name = "col1lin10";
             this.col1lin10.Size = new System.Drawing.Size(31, 24);
             this.col1lin10.TabIndex = 9;
@@ -828,7 +832,7 @@
             // 
             this.col1lin9.AutoSize = true;
             this.col1lin9.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col1lin9.Location = new System.Drawing.Point(13, 336);
+            this.col1lin9.Location = new System.Drawing.Point(21, 336);
             this.col1lin9.Name = "col1lin9";
             this.col1lin9.Size = new System.Drawing.Size(31, 24);
             this.col1lin9.TabIndex = 8;
@@ -838,7 +842,7 @@
             // 
             this.col1lin8.AutoSize = true;
             this.col1lin8.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col1lin8.Location = new System.Drawing.Point(13, 299);
+            this.col1lin8.Location = new System.Drawing.Point(21, 299);
             this.col1lin8.Name = "col1lin8";
             this.col1lin8.Size = new System.Drawing.Size(31, 24);
             this.col1lin8.TabIndex = 7;
@@ -848,7 +852,7 @@
             // 
             this.col1lin7.AutoSize = true;
             this.col1lin7.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col1lin7.Location = new System.Drawing.Point(13, 262);
+            this.col1lin7.Location = new System.Drawing.Point(21, 262);
             this.col1lin7.Name = "col1lin7";
             this.col1lin7.Size = new System.Drawing.Size(31, 24);
             this.col1lin7.TabIndex = 6;
@@ -858,7 +862,7 @@
             // 
             this.col1lin6.AutoSize = true;
             this.col1lin6.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col1lin6.Location = new System.Drawing.Point(13, 225);
+            this.col1lin6.Location = new System.Drawing.Point(21, 225);
             this.col1lin6.Name = "col1lin6";
             this.col1lin6.Size = new System.Drawing.Size(31, 24);
             this.col1lin6.TabIndex = 5;
@@ -868,7 +872,7 @@
             // 
             this.col1lin5.AutoSize = true;
             this.col1lin5.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col1lin5.Location = new System.Drawing.Point(13, 188);
+            this.col1lin5.Location = new System.Drawing.Point(21, 188);
             this.col1lin5.Name = "col1lin5";
             this.col1lin5.Size = new System.Drawing.Size(31, 24);
             this.col1lin5.TabIndex = 4;
@@ -878,7 +882,7 @@
             // 
             this.col1lin4.AutoSize = true;
             this.col1lin4.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col1lin4.Location = new System.Drawing.Point(13, 151);
+            this.col1lin4.Location = new System.Drawing.Point(21, 151);
             this.col1lin4.Name = "col1lin4";
             this.col1lin4.Size = new System.Drawing.Size(31, 24);
             this.col1lin4.TabIndex = 3;
@@ -888,7 +892,7 @@
             // 
             this.col1lin3.AutoSize = true;
             this.col1lin3.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col1lin3.Location = new System.Drawing.Point(13, 114);
+            this.col1lin3.Location = new System.Drawing.Point(21, 114);
             this.col1lin3.Name = "col1lin3";
             this.col1lin3.Size = new System.Drawing.Size(31, 24);
             this.col1lin3.TabIndex = 2;
@@ -898,7 +902,7 @@
             // 
             this.col1lin2.AutoSize = true;
             this.col1lin2.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col1lin2.Location = new System.Drawing.Point(13, 77);
+            this.col1lin2.Location = new System.Drawing.Point(21, 77);
             this.col1lin2.Name = "col1lin2";
             this.col1lin2.Size = new System.Drawing.Size(31, 24);
             this.col1lin2.TabIndex = 1;
@@ -908,11 +912,59 @@
             // 
             this.col1lin1.AutoSize = true;
             this.col1lin1.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.col1lin1.Location = new System.Drawing.Point(13, 40);
+            this.col1lin1.Location = new System.Drawing.Point(21, 40);
             this.col1lin1.Name = "col1lin1";
             this.col1lin1.Size = new System.Drawing.Size(31, 24);
             this.col1lin1.TabIndex = 0;
             this.col1lin1.Text = "---";
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Location = new System.Drawing.Point(144, 7);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(121, 395);
+            this.panel4.TabIndex = 66;
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Location = new System.Drawing.Point(271, 7);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(121, 395);
+            this.panel5.TabIndex = 66;
+            // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Location = new System.Drawing.Point(398, 7);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(121, 395);
+            this.panel6.TabIndex = 66;
+            // 
+            // panel7
+            // 
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Location = new System.Drawing.Point(525, 7);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(121, 395);
+            this.panel7.TabIndex = 66;
+            // 
+            // panel8
+            // 
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Location = new System.Drawing.Point(652, 7);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(121, 395);
+            this.panel8.TabIndex = 66;
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Location = new System.Drawing.Point(17, 7);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(121, 395);
+            this.panel3.TabIndex = 65;
             // 
             // lblTeste
             // 
@@ -924,12 +976,48 @@
             this.lblTeste.TabIndex = 8;
             this.lblTeste.Text = "Label para teste";
             // 
+            // next
+            // 
+            this.next.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.next.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.next.Location = new System.Drawing.Point(764, 628);
+            this.next.Name = "next";
+            this.next.Size = new System.Drawing.Size(117, 30);
+            this.next.TabIndex = 9;
+            this.next.Text = "Proximo";
+            this.next.UseVisualStyleBackColor = true;
+            this.next.Click += new System.EventHandler(this.next_Click);
+            // 
+            // prev
+            // 
+            this.prev.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prev.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.prev.Location = new System.Drawing.Point(4, 628);
+            this.prev.Name = "prev";
+            this.prev.Size = new System.Drawing.Size(117, 30);
+            this.prev.TabIndex = 10;
+            this.prev.Text = "Voltar";
+            this.prev.UseVisualStyleBackColor = true;
+            this.prev.Click += new System.EventHandler(this.prev_Click);
+            // 
+            // imgLogo
+            // 
+            this.imgLogo.Image = global::EstatisticaACME.Properties.Resources.AcmeSystems;
+            this.imgLogo.Location = new System.Drawing.Point(247, 0);
+            this.imgLogo.Name = "imgLogo";
+            this.imgLogo.Size = new System.Drawing.Size(390, 143);
+            this.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgLogo.TabIndex = 2;
+            this.imgLogo.TabStop = false;
+            // 
             // CriacaoTabela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(884, 662);
+            this.Controls.Add(this.prev);
+            this.Controls.Add(this.next);
             this.Controls.Add(this.lblTeste);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblTitle);
@@ -940,10 +1028,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Criação da Tabela";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CriacaoTabela_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1007,7 +1095,6 @@
         private System.Windows.Forms.Label col3lin8;
         private System.Windows.Forms.Label col3lin7;
         private System.Windows.Forms.Label col3lin6;
-        private System.Windows.Forms.Label col3lin5;
         private System.Windows.Forms.Label col3lin4;
         private System.Windows.Forms.Label col3lin3;
         private System.Windows.Forms.Label col3lin2;
@@ -1022,5 +1109,14 @@
         private System.Windows.Forms.Label col2lin3;
         private System.Windows.Forms.Label col2lin2;
         private System.Windows.Forms.Label col2lin1;
+        private System.Windows.Forms.Label col3lin5;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button next;
+        private System.Windows.Forms.Button prev;
     }
 }

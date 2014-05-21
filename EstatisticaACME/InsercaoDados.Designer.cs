@@ -63,24 +63,24 @@
             // rdoContinua
             // 
             this.rdoContinua.AutoSize = true;
+            this.rdoContinua.Checked = true;
             this.rdoContinua.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoContinua.Location = new System.Drawing.Point(465, 283);
+            this.rdoContinua.Location = new System.Drawing.Point(226, 282);
             this.rdoContinua.Name = "rdoContinua";
-            this.rdoContinua.Size = new System.Drawing.Size(176, 28);
+            this.rdoContinua.Size = new System.Drawing.Size(175, 28);
             this.rdoContinua.TabIndex = 2;
+            this.rdoContinua.TabStop = true;
             this.rdoContinua.Text = "Variavel Continua";
             this.rdoContinua.UseVisualStyleBackColor = true;
             // 
             // rdoDiscreta
             // 
             this.rdoDiscreta.AutoSize = true;
-            this.rdoDiscreta.Checked = true;
             this.rdoDiscreta.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoDiscreta.Location = new System.Drawing.Point(243, 283);
+            this.rdoDiscreta.Location = new System.Drawing.Point(489, 283);
             this.rdoDiscreta.Name = "rdoDiscreta";
-            this.rdoDiscreta.Size = new System.Drawing.Size(171, 28);
+            this.rdoDiscreta.Size = new System.Drawing.Size(170, 28);
             this.rdoDiscreta.TabIndex = 3;
-            this.rdoDiscreta.TabStop = true;
             this.rdoDiscreta.Text = "Variavel Discreta";
             this.rdoDiscreta.UseVisualStyleBackColor = true;
             // 
@@ -131,7 +131,7 @@
             this.lblteste.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblteste.Location = new System.Drawing.Point(720, 293);
             this.lblteste.Name = "lblteste";
-            this.lblteste.Size = new System.Drawing.Size(89, 18);
+            this.lblteste.Size = new System.Drawing.Size(86, 18);
             this.lblteste.TabIndex = 8;
             this.lblteste.Text = "Teste - Valor";
             // 

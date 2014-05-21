@@ -112,7 +112,7 @@ namespace EstatisticaACME
                 Random rand = new Random();
                 for (int i = 0; i < int.Parse(txtBox.Text); i++)
                 {
-                    txtEntrada.Text += rand.Next(-50, 50) + " ";
+                    txtEntrada.Text += rand.Next(-20, 20) + " ";
                 }
             }
             catch
